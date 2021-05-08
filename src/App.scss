@@ -19,7 +19,8 @@ header{
   align-items: center;
   display: flex;
   justify-content: space-between;
-
+    padding-top: 26px;
+    padding-bottom: 22px;
   .nav {
     display: flex;
     justify-content: space-between;
@@ -32,12 +33,23 @@ header{
       font-weight: var(--f-sweight);
       line-height: var(--f-slineheight);
       text-decoration: none;
-    
+      position: relative;
+      
     }
     
     & .active {
         color: var(--f-blue);
+        &::before{
+            content:"";
+            background: var(--f-blue);
+            height: 4px;
+            position: absolute;
+            top: 40px;
+            width: 128px;
+      }  
+      
     }
+
 
     
     :nth-child(1) {
