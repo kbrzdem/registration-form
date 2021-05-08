@@ -2,7 +2,8 @@
   --f-color: black;
   --f-slineheight: 20px;
   --f-ssize: 16px;
-  --f-sweight: 400;
+  --f-xsweight: 400;
+  --f-sweight: 500;
   --f-mweight: 600;
   --f-blue: #2196f3;
 }
@@ -30,9 +31,9 @@ header {
     }
     .nav__item {
       color: var(--f-color);
-      font-size: var(--f-ssize);
-      font-weight: var(--f-sweight);
+      font-size: var(--f-xssize);
       line-height: var(--f-slineheight);
+      font-weight: var(--f-sweight);
       text-decoration: none;
       position: relative;
     }
@@ -64,11 +65,21 @@ header {
 
 .button {
   align-items: center;
-  border: none;
-  background: none;
   color: var(--f-blue);
-  font-size: var(--f-ssize);
+  font-size: var(--f-xssize);
   font-weight: var(--f-sweight);
   line-height: var(--f-mlineheight);
-  
+  text-decoration: none;
+}
+
+.aside {
+    padding: 32px 0 0 25px;
+  &__title {
+    align-items: center;
+    color: #979797;
+    font-size: var(--f-ssize);
+    line-height: var(--f-slineheight);
+    font-weight: var(--f-sweight);
+
+  }
 }
