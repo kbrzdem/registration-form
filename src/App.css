@@ -3,15 +3,16 @@
   --f-slineheight: 20px;
   --f-ssize: 16px;
   --f-sweight: 400;
+  --f-mweight: 600;
   --f-blue: #2196f3;
 }
 
 body {
-  background: #E5E5E5;
+  background: #e5e5e5;
 }
 
 header {
-  background: #FFF;
+  background: #fff;
   border: 1px solid #dfdfdf;
 }
 
@@ -73,5 +74,17 @@ header {
   margin-left: 4px;
   position: absolute;
   width: 14px;
+}
+
+.button {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: none;
+  background: none;
+  color: var(--f-blue);
+  font-size: var(--f-ssize);
+  font-weight: var(--f-sweight);
+  line-height: var(--f-mlineheight);
 }
 /*# sourceMappingURL=App.css.map */

@@ -3,29 +3,30 @@
   --f-slineheight: 20px;
   --f-ssize: 16px;
   --f-sweight: 400;
+  --f-mweight: 600;
   --f-blue: #2196f3;
 }
 
-body{
-    background:#E5E5E5;
+body {
+  background: #e5e5e5;
 }
 
-header{
-    background: #FFF;
-    border: 1px solid #dfdfdf;
+header {
+  background: #fff;
+  border: 1px solid #dfdfdf;
 }
 
 .nav-wrap {
   align-items: center;
   display: flex;
   justify-content: space-between;
-    padding-top: 26px;
-    padding-bottom: 22px;
+  padding-top: 26px;
+  padding-bottom: 22px;
   .nav {
     display: flex;
     justify-content: space-between;
-    & .event{
-        margin-right: 50px;
+    & .event {
+      margin-right: 50px;
     }
     .nav__item {
       color: var(--f-color);
@@ -34,28 +35,22 @@ header{
       line-height: var(--f-slineheight);
       text-decoration: none;
       position: relative;
-      
     }
-    
+
     & .active {
-        color: var(--f-blue);
-        &::before{
-            content:"";
-            background: var(--f-blue);
-            height: 4px;
-            position: absolute;
-            top: 40px;
-            width: 128px;
-      }  
-      
+      color: var(--f-blue);
+      &::before {
+        content: "";
+        background: var(--f-blue);
+        height: 4px;
+        position: absolute;
+        top: 40px;
+        width: 128px;
+      }
     }
 
-
-    
     :nth-child(1) {
       position: relative;
-     
-      
     }
   }
 }
@@ -65,6 +60,15 @@ header{
   margin-left: 4px;
   position: absolute;
   width: 14px;
-  
+}
+
+.button {
+  align-items: center;
+  border: none;
+  background: none;
+  color: var(--f-blue);
+  font-size: var(--f-ssize);
+  font-weight: var(--f-sweight);
+  line-height: var(--f-mlineheight);
   
 }
