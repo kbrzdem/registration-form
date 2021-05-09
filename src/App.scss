@@ -66,20 +66,46 @@ header {
 .button {
   align-items: center;
   color: var(--f-blue);
-  font-size: var(--f-xssize);
-  font-weight: var(--f-sweight);
+  font-size: var(--f-xsize);
+  font-weight: var(--f-mweight);
   line-height: var(--f-mlineheight);
   text-decoration: none;
 }
 
 .aside {
-    padding: 32px 0 0 25px;
+  padding: 32px 0 0 25px;
+  & ul {
+    list-style-type: none;
+    margin: auto;
+    padding: 0;
+  }
   &__title {
     align-items: center;
     color: #979797;
     font-size: var(--f-ssize);
     line-height: var(--f-slineheight);
     font-weight: var(--f-sweight);
-
   }
+  &__link {
+    padding: 16px 8px;
+    margin-bottom: 4px;
+    &--text {
+      font-size: var(--f-ssize);
+      line-height: var(--f-slineheight);
+      font-weight: var(--f-xsweight);
+      color: #b6b6b6;
+      text-decoration: none;
+      padding: 16px 8px;
+    }
+    & .active {
+      color: #000;
+      background: rgba(0, 0, 0, 0.06);
+      border-radius: 4px;
+      font-weight: var(--f-mweight);
+      padding: 16px 8px;
+    }
+  }
+}
+
+.choosetitle {
 }
