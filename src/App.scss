@@ -1,7 +1,11 @@
 :root {
   --f-color: black;
   --f-slineheight: 20px;
+  --f-smlineheight: 28px;
+  --f-mlineheight: 32px;
   --f-ssize: 16px;
+  --f-msize: 20px;
+  --f-lsize: 24px;
   --f-xsweight: 400;
   --f-sweight: 500;
   --f-mweight: 600;
@@ -108,4 +112,57 @@ header {
 }
 
 .choosetitle {
+  color: var(--f-color);
+  font-size: var(--f-lsize);
+  line-height: var(--f-mlineheight);
+  font-weight: var(--f-xsweight);
+  margin-top: 48px;
+  margin-bottom: 48px;
+}
+
+.typecard {
+  background: #ffffff;
+  border: 1px solid #dfdfdf;
+  border-radius: 8px;
+  margin-bottom: 49px;
+  padding-left: 9px;
+  padding-right: 9px;
+  & .typeform-radio {
+    border-bottom: 1px solid #dfdfdf;
+    margin: auto;
+  }
+  & .typeradio-title-wrap {
+    align-items: center;
+    border-bottom: 1px solid #dfdfdf;
+    display: flex;
+    justify-content: space-between;
+  }
+  & .typeradio-title {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+  }
+  & .type-radio-title {
+    color: var(--f-color);
+    font-size: var(--f-msize);
+    line-height: var(--f-mlineheight);
+    font-weight: var(--f-mweight);
+    margin-left: 16px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+  }
+  & .type-radio-number {
+    color: var(--f-blue);
+    font-size: var(--f-msize);
+    font-weight: var(--f-xsweight);
+    line-height: var(--f-mlineheight);
+  }
+
+  & .typeradio-text {
+    color: var(--f-color);
+    font-size: var(--f-ssize);
+    font-weight: var(--f-xsweight);
+    line-height: var(--f-smlineheight);
+    margin-bottom: 24px;
+  }
 }

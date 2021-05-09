@@ -1,7 +1,11 @@
 :root {
   --f-color: black;
   --f-slineheight: 20px;
+  --f-smlineheight: 28px;
+  --f-mlineheight: 32px;
   --f-ssize: 16px;
+  --f-msize: 20px;
+  --f-lsize: 24px;
   --f-xsweight: 400;
   --f-sweight: 500;
   --f-mweight: 600;
@@ -82,14 +86,20 @@ header {
       -ms-flex-align: center;
           align-items: center;
   color: var(--f-blue);
-  font-size: var(--f-xssize);
-  font-weight: var(--f-sweight);
+  font-size: var(--f-xsize);
+  font-weight: var(--f-mweight);
   line-height: var(--f-mlineheight);
   text-decoration: none;
 }
 
 .aside {
   padding: 32px 0 0 25px;
+}
+
+.aside ul {
+  list-style-type: none;
+  margin: auto;
+  padding: 0;
 }
 
 .aside__title {
@@ -100,5 +110,101 @@ header {
   font-size: var(--f-ssize);
   line-height: var(--f-slineheight);
   font-weight: var(--f-sweight);
+}
+
+.aside__link {
+  padding: 16px 8px;
+  margin-bottom: 4px;
+}
+
+.aside__link--text {
+  font-size: var(--f-ssize);
+  line-height: var(--f-slineheight);
+  font-weight: var(--f-xsweight);
+  color: #b6b6b6;
+  text-decoration: none;
+  padding: 16px 8px;
+}
+
+.aside__link .active {
+  color: #000;
+  background: rgba(0, 0, 0, 0.06);
+  border-radius: 4px;
+  font-weight: var(--f-mweight);
+  padding: 16px 8px;
+}
+
+.choosetitle {
+  color: var(--f-color);
+  font-size: var(--f-lsize);
+  line-height: var(--f-mlineheight);
+  font-weight: var(--f-xsweight);
+  margin-top: 48px;
+  margin-bottom: 48px;
+}
+
+.typecard {
+  background: #ffffff;
+  border: 1px solid #dfdfdf;
+  border-radius: 8px;
+  margin-bottom: 49px;
+  padding-left: 9px;
+  padding-right: 9px;
+}
+
+.typecard .typeform-radio {
+  border-bottom: 1px solid #dfdfdf;
+  margin: auto;
+}
+
+.typecard .typeradio-title-wrap {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 1px solid #dfdfdf;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.typecard .typeradio-title {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.typecard .type-radio-title {
+  color: var(--f-color);
+  font-size: var(--f-msize);
+  line-height: var(--f-mlineheight);
+  font-weight: var(--f-mweight);
+  margin-left: 16px;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+.typecard .type-radio-number {
+  color: var(--f-blue);
+  font-size: var(--f-msize);
+  font-weight: var(--f-xsweight);
+  line-height: var(--f-mlineheight);
+}
+
+.typecard .typeradio-text {
+  color: var(--f-color);
+  font-size: var(--f-ssize);
+  font-weight: var(--f-xsweight);
+  line-height: var(--f-smlineheight);
+  margin-bottom: 24px;
 }
 /*# sourceMappingURL=App.css.map */
