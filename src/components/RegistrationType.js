@@ -20,7 +20,10 @@ const RegistrationType = () => {
         <div className="row typecard">
           <div className="col-12">
             <div className="radio">
-              <label className="radio-label">
+              <label
+                className="radio-label "
+                //style={radio === "regular" ? { border: "1px solid blue" } : {}}
+              >
                 <div className="typeradio-title-wrap">
                   <div className="typeradio-title">
                     <input
@@ -32,6 +35,7 @@ const RegistrationType = () => {
                         setRadio(e.target.value);
                       }}
                     />
+
                     <h3 className="type-radio-title">Regular</h3>
                   </div>
                   <p className="type-radio-number">$65,00</p>
@@ -135,7 +139,6 @@ const RegistrationType = () => {
             </div>
           </div>
         </div>
-        <button type="submit"> Next</button>
       </form>
     </>
   );

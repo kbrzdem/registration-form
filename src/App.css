@@ -206,5 +206,91 @@ header {
   font-weight: var(--f-xsweight);
   line-height: var(--f-smlineheight);
   margin-bottom: 24px;
+  margin-top: 24px;
+}
+
+/*input[type="radio"]:checked .typecard {
+  box-shadow: 0 0 0 3px orange;
+}*/
+/*.radio-label {
+  background: #ffffff;
+  border: 1px solid #dfdfdf;
+  border-radius: 8px;
+  margin-bottom: 49px;
+  padding-left: 9px;
+  padding-right: 9px;
+}*/
+/*label:checked + .typecard {
+  border: 5px solid red;
+}*/
+/*:checked + .label {
+
+  font-weight: bold;
+  border: 5px solid red;
+}
+*/
+.card-img {
+  display: none;
+}
+
+.next-wrap {
+  border: 1px solid #dfdfdf;
+  background: #fff;
+  padding: 16px 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.btn {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 4px;
+  background: var(--f-blue);
+  border: 0;
+  color: #fff;
+  height: 52px;
+  font-size: var(--f-ssize);
+  font-weight: var(--f-mweight);
+  line-height: var(--f-slineheight);
+  padding: 16px 60px 16px 32px;
+  position: relative;
+  text-align: center;
+}
+
+.btn:hover {
+  cursor: pointer;
+}
+
+.btn span {
+  position: absolute;
+  bottom: 30px;
+  right: 35px;
+}
+
+.btn span:hover {
+  cursor: pointer;
+}
+
+@media screen and (min-width: 992px) {
+  header {
+    padding-left: 322px;
+    padding-right: 322px;
+  }
+  .next-wrap {
+    padding-right: 336px;
+  }
+  .cardimg-wrap {
+    margin: 48px 48px 0 33px;
+  }
+  .card-img {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 /*# sourceMappingURL=App.css.map */
