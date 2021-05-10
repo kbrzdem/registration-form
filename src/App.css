@@ -344,6 +344,60 @@ header {
   margin-bottom: 24px;
 }
 
+.typecard--summary-pd {
+  padding: 24px 24px 24px 24px;
+  border-bottom: 1px solid #dfdfdf;
+}
+
+.summary-card {
+  border-bottom: 1px solid #dfdfdf;
+  margin-bottom: 93px;
+}
+
+.summary-title {
+  color: var(--f-color);
+  font-size: var(--f-lsize);
+  font-weight: var(--f-xsweight);
+  line-height: var(--f-mlineheight);
+  margin: 48px 0 30px 0;
+  padding: 0px;
+}
+
+.summary-total {
+  color: #979797;
+  font-size: var(--f-ssize);
+  font-weight: var(--f-sweight);
+  line-height: var(--f-mlineheight);
+  margin-bottom: 30px;
+  padding: 0px;
+}
+
+.summary-text {
+  color: var(--f-color);
+  font-weight: bold;
+  line-height: var(--f-mlineheight);
+  margin-top: 0;
+  margin-bottom: 24px;
+}
+
+.summary-subtitle {
+  color: var(--f-color);
+  font-size: var(--f-msize);
+  font-weight: var(--f-sweight);
+  line-height: var(--f-mlineheight);
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+
+.summary-typetext {
+  color: #979797;
+  font-size: var(--f-msize);
+  font-weight: var(--f-xsweight);
+  line-height: var(--f-mlineheight);
+  margin-top: 0;
+  margin-bottom: 24px;
+}
+
 @media screen and (min-width: 992px) {
   header {
     padding-left: 322px;
