@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useHistory } from "react-router-dom";
-//import Button from "./Button";
+import Button from "./Button";
 
 const Participantinfo = () => {
   const [name, setName] = useState("");
@@ -14,7 +14,10 @@ const Participantinfo = () => {
       const data = { name, lastname };
       setName("");
       setLastname("");
-      history.push({ pathname: "/summary", state: { ...data } });
+      history.push({
+        pathname: "/summary",
+        state: { ...data },
+      });
       console.log(data);
       console.log("lastname: " + lastname);
     } else {
@@ -194,9 +197,7 @@ const Participantinfo = () => {
         </div>
       </form>
       <div>
-        <button onClick={handleSubmitForm} type="submit" className="btn">
-          Next Step <span class="material-icons">east</span>
-        </button>
+        <Button handleSubmitForm={handleSubmitForm} />
       </div>
     </>
   );
