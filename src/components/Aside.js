@@ -33,11 +33,7 @@ const Aside = () => {
         </li>
         <li>
           <div className="aside__link">
-            <NavLink
-              exact
-              to="/RegistrationForm/summary"
-              className="aside__link--text "
-            >
+            <NavLink exact to="/summary" className="aside__link--text ">
               Summary
             </NavLink>
           </div>
@@ -46,4 +42,5 @@ const Aside = () => {
     </div>
   );
 };
+
 export default Aside;

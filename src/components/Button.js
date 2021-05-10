@@ -1,15 +1,9 @@
-import { useHistory } from "react-router";
-
-const Button = () => {
-  let history = useHistory();
-
-  const handleSubmitForm = (event) => {
-    event.preventDefault();
-    history.push({ pathname: "/participant-info" });
-    console.log("başarılı");
-  };
+const Button = ({ handleSubmitForm }) => {
   return (
-    <div className="next-wrap">
+    <div
+      style={{ position: "fixed", bottom: 0, left: 0, right: 0 }}
+      className="next-wrap"
+    >
       <div>
         <button onClick={handleSubmitForm} type="submit" className="btn">
           Next Step <span class="material-icons">east</span>
