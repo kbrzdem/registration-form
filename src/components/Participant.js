@@ -1,6 +1,6 @@
 import Aside from "./Aside";
-import Participantinfo from "./Participantinfo";
 import Cardimg from "./Cardimg";
+import Participantinfo from "./Participantinfo";
 
 const Participant = () => {
   return (
