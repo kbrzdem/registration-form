@@ -9,6 +9,8 @@ const RegistrationType = () => {
 
   const handleSubmitForm = (event) => {
     event.preventDefault();
+    const data = { radio };
+    console.log(data);
     setNextClicked(true);
     console.log("form-successful");
   };
@@ -16,7 +18,7 @@ const RegistrationType = () => {
   if (!nextClicked) {
     return (
       <>
-        <h1 className="row choosetitle"> Choose Registration Types {radio} </h1>
+        <h1 className="row choosetitle"> Choose Registration Types </h1>
         <form onSubmit={handleSubmitForm} className="global-form">
           <div className="row typecard">
             <div className="col-12">
