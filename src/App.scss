@@ -117,7 +117,7 @@ header {
   line-height: var(--f-mlineheight);
   font-weight: var(--f-xsweight);
   margin-top: 48px;
-  margin-bottom: 48px;
+  margin-bottom: 24px;
 }
 
 .typecard {
@@ -224,6 +224,63 @@ header {
       cursor: pointer;
     }
   }
+}
+
+.input {
+  border: 1px solid #b6b6b6;
+  border-radius: 4px;
+  color: var(--f-color);
+  font-size: var(--f-ssize);
+  font-weight: var(--f-xsweight);
+  line-height: var(--f-ssize);
+  height: 54px;
+  width: 100%;
+  padding: 16px;
+  text-align: left;
+}
+.info-wrap {
+  padding-left: 48px;
+  padding-right: 48px;
+}
+.typecard--info {
+  padding: 0;
+}
+.first-wrap {
+  border-bottom: 1px solid #dfdfdf;
+  padding-top: 37px;
+  padding-bottom: 24px;
+}
+
+.info-text {
+  color: var(--f-color);
+  font-size: var(--f-ssize);
+  font-weight: var(--f-sweight);
+  line-height: var(--f-msize);
+  text-align: left;
+
+  &--weight {
+    font-weight: var(--f-xsweight);
+  }
+  &--mb {
+    margin-bottom: 7px;
+  }
+  &--mailmt {
+    margin-top: 29px;
+  }
+
+  &--companymt {
+    margin-top: 43px;
+  }
+}
+
+.typeradio-title--info {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.m-b {
+  margin-bottom: 24px;
 }
 
 @media screen and(min-width:992px) {
